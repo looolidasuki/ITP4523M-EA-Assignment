@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Order Records</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Template/AdminLTE-master/dist/css/adminlte.css">
+</head>
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div class="app-wrapper">
+        <!-- Header -->
+        <nav class="app-header navbar navbar-expand bg-body">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href="#" class="nav-link">Staff Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+            <div class="sidebar-brand">
+                <a href="#" class="brand-link">
+                    <span class="brand-text fw-light">Staff Panel</span>
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <nav class="mt-2">
+                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="insert_furniture.html" class="nav-link">
+                                <i class="nav-icon bi bi-plus-circle"></i>
+                                <p>Insert Furniture</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="insert_material.html" class="nav-link">
+                                <i class="nav-icon bi bi-plus-circle"></i>
+                                <p>Insert Material</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="update_order.html" class="nav-link active">
+                                <i class="nav-icon bi bi-pencil-square"></i>
+                                <p>Update Order</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="report.html" class="nav-link">
+                                <i class="nav-icon bi bi-bar-chart"></i>
+                                <p>Generate Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="delete_furniture.html" class="nav-link">
+                                <i class="nav-icon bi bi-trash"></i>
+                                <p>Delete Furniture</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <div class="app-content-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3 class="mb-0">Update Order Records</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Order List</h3>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Furniture Name</th>
+                                                <th>Quantity</th>
+                                                <th>Status</th>
+                                                <th>Material Usage</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Chair</td>
+                                                <td><input type="number" class="form-control" value="5"></td>
+                                                <td>
+                                                    <select class="form-select">
+                                                        <option>Open</option>
+                                                        <option>Approved</option>
+                                                        <option>Rejected</option>
+                                                    </select>
+                                                </td>
+                                                <td>Wood: 10 units, Fabric: 2 units</td>
+                                                <td><button class="btn btn-primary btn-sm">Update</button></td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="float-end d-none d-sm-inline">Anything you want</div>
+            <strong>Copyright &copy; 2023 <a href="#">Company</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Template/AdminLTE-master/dist/js/adminlte.js"></script>
+</body>
+</html>
